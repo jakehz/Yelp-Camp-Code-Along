@@ -1,0 +1,25 @@
+{
+  "name": "yelp-camp-code-along",
+  "version": "1.0.0",
+  "description": "In this github I'm following along with Colt Steele's programming in the Web Developer bootcamp.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakehz/Yelp-Camp-Code-Along.git"
+  },
+  "author": "Jake Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakehz/Yelp-Camp-Code-Along/issues"
+  },
+  "homepage": "https://github.com/jakehz/Yelp-Camp-Code-Along#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  }
+}
