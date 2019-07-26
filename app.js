@@ -1,15 +1,26 @@
 var express = require("express");
 var app = express();
 
+// replaces the functionality of body parser
 app.use(express.urlencoded({extended: true}));
 
 // set templates to EJS
 app.set("view engine", "ejs");
 
 var campgrounds = [
-        {name: "Salmon Creek", image:"https://photosforclass.com/download/pixabay-1846142?webUrl=https%3A%2F%2Fpixabay.com%2Fget%2F57e8d1454b56ae14f6da8c7dda793f7f1636dfe2564c704c732d7ddd9044c05e_960.jpg&user=Pexels"}, 
-        {name: "Yosemite", image:"https://photosforclass.com/download/pixabay-1149402?webUrl=https%3A%2F%2Fpixabay.com%2Fget%2F57e1d14a4e52ae14f6da8c7dda793f7f1636dfe2564c704c732d7ddd9044c05e_960.jpg&user=Free-Photos"}, 
-        {name: "Fallen Leaf Lake", image:"https://photosforclass.com/download/pixabay-1851092?webUrl=https%3A%2F%2Fpixabay.com%2Fget%2F57e8d0424a5bae14f6da8c7dda793f7f1636dfe2564c704c732d7ddd9044c05e_960.jpg&user=Pexels"}, 
+        {name: "Salmon Creek", image:"https://cdn.pixabay.com/photo/2016/02/18/22/16/tent-1208201_1280.jpg"}, 
+        {name: "Yosemite", image:"https://cdn.pixabay.com/photo/2017/09/26/13/50/rv-2788677_1280.jpg"}, 
+        {name: "Fallen Leaf Lake", image:"https://cdn.pixabay.com/photo/2017/08/04/20/04/camping-2581242_1280.jpg"}, 
+        {name: "Salmon Creek", image:"https://cdn.pixabay.com/photo/2016/02/18/22/16/tent-1208201_1280.jpg"}, 
+        {name: "Yosemite", image:"https://cdn.pixabay.com/photo/2017/09/26/13/50/rv-2788677_1280.jpg"}, 
+        {name: "Fallen Leaf Lake", image:"https://cdn.pixabay.com/photo/2017/08/04/20/04/camping-2581242_1280.jpg"}, 
+        {name: "Salmon Creek", image:"https://cdn.pixabay.com/photo/2016/02/18/22/16/tent-1208201_1280.jpg"}, 
+        {name: "Yosemite", image:"https://cdn.pixabay.com/photo/2017/09/26/13/50/rv-2788677_1280.jpg"}, 
+        {name: "Fallen Leaf Lake", image:"https://cdn.pixabay.com/photo/2017/08/04/20/04/camping-2581242_1280.jpg"}, 
+        {name: "Salmon Creek", image:"https://cdn.pixabay.com/photo/2016/02/18/22/16/tent-1208201_1280.jpg"}, 
+        {name: "Yosemite", image:"https://cdn.pixabay.com/photo/2017/09/26/13/50/rv-2788677_1280.jpg"}, 
+        {name: "Fallen Leaf Lake", image:"https://cdn.pixabay.com/photo/2017/08/04/20/04/camping-2581242_1280.jpg"}, 
+ 
     ];
 
 app.get("/", (req, res) => {
